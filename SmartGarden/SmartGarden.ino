@@ -1,36 +1,19 @@
-/***************************************************
-  Adafruit MQTT Library ESP8266 Example
-
-  Must use ESP8266 Arduino from:
-    https://github.com/esp8266/Arduino
-
-  Works great with Adafruit's Huzzah ESP board & Feather
-  ----> https://www.adafruit.com/product/2471
-  ----> https://www.adafruit.com/products/2821
-
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit and open-source hardware by purchasing
-  products from Adafruit!
-
-  Written by Tony DiCola for Adafruit Industries.
-  MIT license, all text above must be included in any redistribution
  ****************************************************/
-#include <ESP8266WiFi.h>
+#include <DHT.h>
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
-#include <DHT.h>
 
 /************************* WiFi Access Point *********************************/
 
-#define WLAN_SSID       "Seger"
-#define WLAN_PASS       "JusAlpukat223"
+#define WLAN_SSID       "SSID / Nama Wifi yang anda gunakan"
+#define WLAN_PASS       "Password Wifi yang anda gunakan"
 
 /************************* Adafruit.io Setup *********************************/
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883                   // use 8883 for SSL
-#define AIO_USERNAME    "hidrops"
-#define AIO_KEY         "4f080277071f4d5a87160603e0485f18" // You can see this code in adafruit.io in your feeds and account
+#define AIO_USERNAME    "Nama username adafruit.io anda"
+#define AIO_KEY         "Kode adafruit.io anda" // You can see this code in adafruit.io in your feeds and account
 
 /************************* pinMode definition ********************************/
 
